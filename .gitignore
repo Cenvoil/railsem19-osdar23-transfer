@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*.pt
+*.pth
+*.npy
+*.ply
+*.bag
+*.log
+/data/
+/runs/
+/outputs/
+/checkpoints/
+/.venv/

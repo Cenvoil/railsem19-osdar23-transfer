@@ -1,0 +1,41 @@
+{
+  "source_model": "YOLO26m-sem",
+  "ultralytics_version": "8.4.177",
+  "torch_version": "2.14.1+cu130",
+  "base_weights": {
+    "path": "runs/full_m/weights/best.pt",
+    "md5": "d427b60a6c2d6fe040eba48cd0fd07c4",
+    "in_domain_test_miou": 70.99
+  },
+  "k30_weights": {
+    "path": "runs/ft_k30/weights/best.pt",
+    "md5": "38336b7910e43a0b7cb6fa5c4e78e280"
+  },
+  "target_supervised_5_1": {
+    "path": "runs/ub51/weights/best.pt",
+    "md5": "d8f38aa9942f92683a2d12aadc4ef66b"
+  },
+  "target_supervised_3_1": {
+    "path": "runs/ub31/weights/best.pt",
+    "md5": "404300c646d5f2c6ff08979c6dd36995"
+  },
+  "k100_seed1": {
+    "path": "runs/ft_k100_s1/weights/best.pt",
+    "md5": "3614c0cdce46a75ba4dbb16b9cf3fb41"
+  },
+  "k100_seed2": {
+    "path": "runs/ft_k100_s2/weights/best.pt",
+    "md5": "a04123da6f2917aab5ccf991856b84f1"
+  },
+  "source_training_args": {
+    "task": "semantic",
+    "model": "yolo26m-sem.pt",
+    "data": "./data/railsem19_yolo/full/railsem19_full.yaml",
+    "epochs": 100,
+    "batch": 12,
+    "imgsz": 1024,
+    "seed": 0,
+    "deterministic": true
+  },
+  "note": "Hashes identify the exact checkpoints used for the reported P2 results; the base model is full_m (70.99% in-domain test mIoU)."
+}

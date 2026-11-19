@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "From RailSem19 to OSDaR23: Zero-Shot Transfer and k-Shot Adaptation for Railway Scene Understanding"
+authors:
+  - family-names: Gan
+    given-names: Hai-Chuan
+  - family-names: Tao
+    given-names: Dan
+year: 2026
+repository-code: "https://github.com/Cenvoil/railsem19-osdar23-transfer"
+license: AGPL-3.0

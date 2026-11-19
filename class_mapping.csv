@@ -1,0 +1,11 @@
+osdar23_class,railsem19_class,note
+track,rail-track,thin line vs wide corridor
+switch,rail-raised,turnout
+train,on-rails,rail vehicle
+signal,traffic-light,signal head
+signal_pole,pole,merged
+catenary_pole,pole,merged
+road_vehicle,car;truck,many-to-one
+crowd,human,merged
+person,human,merged
+buffer_stop,construction,proxy
