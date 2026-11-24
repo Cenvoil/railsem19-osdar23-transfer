@@ -12,8 +12,19 @@ Code, class mapping, run manifest, and derived tables for:
 - `train_ft.sh`, `train_ft_seed.sh`, `eval_ft.sh`, `eval_k10_seeds.sh` — training/eval launchers.
 - `YOLO_run_manifest.json` — source model, recipe, and checkpoint hashes.
 - `class_mapping.csv` — OSDaR23 → RailSem19 mapping used in the paper.
-- `results/` — CSV versions of Tables 2–11.
+- `results/` — CSV versions of Tables 2–12, the per-class precision/recall table
+  (Table S1), the GT>0 mean recomputation, and the SegFormer-B5 cross-architecture
+  check.
 - `make_k_shot_figure.py`, `make_pipeline_figure.py` — figure scripts.
+
+## Version
+
+- **v1.1 (2026-11-24)** — class means changed to the standard GT>0 mIoU
+  (`results/multi_seed.csv`, `results/mean_gt_recompute.csv`); k=100 per-seed rows
+  added; Table S1 per-class precision/recall added
+  (`results/Table_S1_per_class_PR.md`); SegFormer-B5 cross-architecture check added
+  (`results/segformer_cross_arch.csv`).
+- v1.0 (2026-11-19) — initial release.
 
 ## Environment
 
